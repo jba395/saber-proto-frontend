@@ -1,0 +1,45 @@
+@keyframes fadeinall {
+    0% {
+        opacity: 1;
+    }
+
+    97% {
+        opacity: 0;
+    }
+
+    98% {
+        opacity: 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        z-index: -1;
+    }
+}
+
+.title, #selected_verse {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#selected_verse {
+    font-weight: bold;
+}
+
+#main_row {
+    height: 60vh;
+}
+
+#left, #right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    font-size: larger;
+    background: lightgray;
+}
